@@ -14,7 +14,8 @@ class TemplateManager:
         name: str,
         template_type: TemplateType,
         fields: List[TemplateField] = None,
-        description: str = ""
+        description: str = "",
+        format_config: dict = None
     ) -> Template:
         """创建新模板"""
         template = Template(
@@ -22,7 +23,8 @@ class TemplateManager:
             name=name,
             type=template_type,
             fields=fields or [],
-            description=description
+            description=description,
+            format_config=format_config or {}
         )
         self._templates[template.id] = template
         self._next_id += 1

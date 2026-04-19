@@ -1,6 +1,9 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel
 from src.search.retriever import DocumentRetriever
+from src.templates.manager import TemplateManager
+from src.templates.renderer import TemplateRenderer
+from src.templates.models import TemplateType, Template
 
 app = FastAPI(title="MSIS API", version="0.0.1")
 
@@ -13,6 +16,24 @@ sample_docs = [
 ]
 
 retriever = DocumentRetriever(documents=sample_docs)
+
+# 模板管理
+template_manager = TemplateManager()
+template_renderer = TemplateRenderer()
+
+# 初始化示例模板
+template_manager.create_template(
+    name="通知模板",
+    template_type=TemplateType.NOTICE,
+    description="标准公文通知格式",
+    format_config={"header": "通知", "footer": "发文机关"}
+)
+template_manager.create_template(
+    name="命令模板",
+    template_type=TemplateType.COMMAND,
+    description="军事命令格式",
+    format_config={"header": "命令", "footer": "指挥机关"}
+)
 
 @app.get("/")
 def root():
@@ -32,3 +53,46 @@ def search(q: str = Query(..., min_length=1, description="搜索关键词")):
     """搜索公文文档"""
     results = retriever.search(q)
     return SearchResponse(query=q, results=results, total=len(results))
+
+class TemplatesResponse(BaseModel):
+    templates: list
+    total: int
+
+@app.get("/api/templates", response_model=TemplatesResponse)
+def list_templates(type: str = None):
+    """获取模板列表"""
+    filter_type = TemplateType(type) if type else None
+    templates = template_manager.list_templates(filter_type)
+    return TemplatesResponse(templates=templates, total=len(templates))
+
+class CreateTemplateRequest(BaseModel):
+    name: str
+    type: str
+    description: str = ""
+
+@app.post("/api/templates")
+def create_template(request: CreateTemplateRequest):
+    """创建模板"""
+    template = template_manager.create_template(
+        name=request.name,
+        template_type=TemplateType(request.type),
+        description=request.description
+    )
+    return template.model_dump()
+
+class RenderRequest(BaseModel):
+    title: str
+    content: str
+
+@app.post("/api/templates/{template_id}/render")
+def render_template(template_id: int, request: RenderRequest):
+    """渲染模板"""
+    template = template_manager.get_template(template_id)
+    if not template:
+        raise HTTPException(status_code=404, detail="模板不存在")
+
+    content = template_renderer.render(template, {
+        "title": request.title,
+        "content": request.content
+    })
+    return {"content": content}
