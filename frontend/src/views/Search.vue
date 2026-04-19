@@ -52,6 +52,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Search } from '@element-plus/icons-vue'
+import { ElMessage } from 'element-plus'
 import axios from 'axios'
 
 const searchQuery = ref('')
@@ -74,6 +75,7 @@ const handleSearch = async () => {
     searchResults.value = response.data.results
   } catch (error) {
     console.error('搜索失败:', error)
+    ElMessage.error('搜索失败，请稍后重试')
   } finally {
     loading.value = false
   }
