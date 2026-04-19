@@ -43,6 +43,6 @@ class Template(BaseModel):
 class GeneratedDocument(BaseModel):
     """生成的文档"""
     id: int | None = None
-    template_id: int
-    content: str
+    template_id: int = Field(..., gt=0, description="模板ID")
+    content: str = Field(..., min_length=1, description="文档内容")
     metadata: dict = Field(default_factory=dict)

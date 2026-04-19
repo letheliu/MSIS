@@ -87,6 +87,32 @@ def test_generated_document_without_id():
     assert doc.id is None
 
 
+def test_template_name_single_space():
+    """测试 Template.name 的边界情况（单空格）"""
+    template = Template(name=" ", type=TemplateType.NOTICE)
+    assert template.name == " "
+
+
+def test_template_field_default():
+    """测试 TemplateField 的 default 字段"""
+    field = TemplateField(
+        name="status",
+        label="状态",
+        default="待处理"
+    )
+    assert field.default == "待处理"
+
+
+def test_template_field_not_required():
+    """测试 TemplateField 的 required=False"""
+    field = TemplateField(
+        name="optional_field",
+        label="可选字段",
+        required=False
+    )
+    assert field.required is False
+
+
 def test_field_types():
     """测试各字段类型"""
     text_field = TemplateField(name="f1", label="文本", field_type=FieldType.TEXT)
