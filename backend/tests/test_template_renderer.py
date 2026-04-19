@@ -127,4 +127,5 @@ def test_render_output_format():
     assert lines[3] == ""
     assert lines[4] == "测试内容"
     assert lines[5] == ""
-    assert lines[6] == "— 发文机关"
+    assert lines[6] == ""  # footer前的额外空行
+    assert lines[7] == "— 发文机关"
