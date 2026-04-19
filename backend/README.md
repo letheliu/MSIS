@@ -13,3 +13,16 @@ pip install -e .
 ```bash
 uvicorn src.main:app --reload
 ```
+
+## 测试
+
+```bash
+# 运行所有测试
+pytest
+
+# 运行测试并显示详细输出
+pytest -v
+
+# 运行特定测试文件
+pytest tests/test_example.py
+```
