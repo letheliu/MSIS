@@ -12,7 +12,7 @@ class TemplateManager:
     def create_template(
         self,
         name: str,
-        type: TemplateType,
+        template_type: TemplateType,
         fields: List[TemplateField] = None,
         description: str = ""
     ) -> Template:
@@ -20,7 +20,7 @@ class TemplateManager:
         template = Template(
             id=self._next_id,
             name=name,
-            type=type,
+            type=template_type,
             fields=fields or [],
             description=description
         )
@@ -32,11 +32,11 @@ class TemplateManager:
         """获取模板"""
         return self._templates.get(template_id)
 
-    def list_templates(self, type: Optional[TemplateType] = None) -> List[Template]:
+    def list_templates(self, template_type: Optional[TemplateType] = None) -> List[Template]:
         """列出模板"""
         templates = list(self._templates.values())
-        if type:
-            templates = [t for t in templates if t.type == type]
+        if template_type:
+            templates = [t for t in templates if t.type == template_type]
         return templates
 
     def delete_template(self, template_id: int) -> bool:
