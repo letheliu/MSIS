@@ -26,7 +26,7 @@ class DocumentIndexer:
                     self._index_file(file_path)
                     success += 1
                 except (IOError, PermissionError, OSError) as e:
-                    errors.append(f"{file_path.name}: {str(e)}")
+                    errors.append(f"索引文件失败 {file_path.name}: {str(e)}")
 
         return {"total": total, "success": success, "errors": errors}
 
@@ -35,21 +35,18 @@ class DocumentIndexer:
         supported_exts = {'.txt', '.md', '.json'}
         return file_path.suffix.lower() in supported_exts
 
-    def _index_file(self, file_path: Path):
-        """索引单个文件"""
-        # 将文件复制到索引目录
+    def _index_file(self, file_path: Path) -> str:
+        """索引单个文件，返回目标文件路径"""
         target = self.output_dir / file_path.name
-        # 检查目标文件是否存在，避免覆盖
-        if target.exists():
-            # 添加数字后缀避免覆盖
-            counter = 1
-            while target.exists():
-                stem = file_path.stem
-                suffix = file_path.suffix
-                target = self.output_dir / f"{stem}_{counter}{suffix}"
-                counter += 1
-        try:
-            shutil.copy2(file_path, target)
-        except (IOError, PermissionError, OSError) as e:
-            raise
+
+        # 避免文件覆盖
+        counter = 1
+        original_target = target
+        while target.exists():
+            target = original_target.with_name(f"{original_target.stem}_{counter}{original_target.suffix}")
+            counter += 1
+
+        # 复制文件，异常由调用者处理
+        shutil.copy2(file_path, target)
+        return str(target)
         # TODO: 调用 Sirchmunk 索引 API
