@@ -3,7 +3,11 @@
     <el-card>
       <template #header>模板库</template>
 
-      <el-row :gutter="20" class="template-grid">
+      <div v-if="loading" class="loading-container">
+        <el-skeleton :rows="5" animated />
+      </div>
+
+      <el-row v-else :gutter="20" class="template-grid">
         <el-col
           v-for="template in templates"
           :key="template.id"
@@ -16,6 +20,8 @@
           </el-card>
         </el-col>
       </el-row>
+
+      <el-empty v-if="!loading && templates.length === 0" description="暂无模板" />
     </el-card>
   </div>
 </template>
@@ -23,10 +29,12 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { ElMessage } from 'element-plus'
 import axios from 'axios'
 
 const router = useRouter()
 const templates = ref([])
+const loading = ref(false)
 
 const typeLabels = {
   command: '命令',
@@ -41,11 +49,15 @@ onMounted(async () => {
 })
 
 const loadTemplates = async () => {
+  loading.value = true
   try {
     const response = await axios.get('/api/templates')
     templates.value = response.data.templates
   } catch (error) {
     console.error('加载模板失败:', error)
+    ElMessage.error('加载模板失败，请稍后重试')
+  } finally {
+    loading.value = false
   }
 }
 
@@ -59,6 +71,10 @@ const useTemplate = (template) => {
 </script>
 
 <style scoped>
+.loading-container {
+  padding: 20px;
+}
+
 .template-grid {
   margin-top: 20px;
 }

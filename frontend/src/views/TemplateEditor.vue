@@ -5,7 +5,11 @@
         <span>编辑公文 - {{ template?.name }}</span>
       </template>
 
-      <el-form :model="form" label-width="100px">
+      <div v-if="loading" class="loading-container">
+        <el-skeleton :rows="5" animated />
+      </div>
+
+      <el-form v-else :model="form" label-width="100px">
         <el-form-item label="标题" required>
           <el-input v-model="form.title" placeholder="输入公文标题" />
         </el-form-item>
@@ -49,6 +53,7 @@ import axios from 'axios'
 const route = useRoute()
 const template = ref(null)
 const form = ref({ title: '', content: '' })
+const loading = ref(false)
 const generating = ref(false)
 const generatedContent = ref('')
 const previewVisible = ref(false)
@@ -59,11 +64,20 @@ onMounted(async () => {
 })
 
 const loadTemplate = async (id) => {
+  loading.value = true
   try {
     const response = await axios.get('/api/templates')
-    template.value = response.data.templates.find(t => t.id === parseInt(id))
+    const found = response.data.templates.find(t => t.id === parseInt(id))
+    if (found) {
+      template.value = found
+    } else {
+      ElMessage.error('模板不存在')
+    }
   } catch (error) {
-    ElMessage.error('加载模板失败')
+    console.error('加载模板失败:', error)
+    ElMessage.error('加载模板失败，请稍后重试')
+  } finally {
+    loading.value = false
   }
 }
 
@@ -79,7 +93,8 @@ const generateDocument = async () => {
     generatedContent.value = response.data.content
     previewVisible.value = true
   } catch (error) {
-    ElMessage.error('生成文档失败')
+    console.error('生成文档失败:', error)
+    ElMessage.error('生成文档失败，请稍后重试')
   } finally {
     generating.value = false
   }
@@ -92,6 +107,10 @@ const copyContent = () => {
 </script>
 
 <style scoped>
+.loading-container {
+  padding: 20px;
+}
+
 .preview-content {
   background: #f5f7fa;
   padding: 20px;
