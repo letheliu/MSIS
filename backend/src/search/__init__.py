@@ -1,6 +1,9 @@
-"""Search module for Sirchmunk integration"""
+"""Search module for Sirchmunk integration
 
-from .indexer import DocumentIndexer
-from .retriever import DocumentRetriever
+This module provides document indexing and retrieval capabilities
+powered by Sirchmunk.
+"""
 
-__all__ = ["DocumentIndexer", "DocumentRetriever"]
+# Exports will be added in subsequent tasks
+# from .indexer import DocumentIndexer
+# from .retriever import DocumentRetriever
