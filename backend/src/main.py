@@ -1,5 +1,5 @@
-from fastapi import FastAPI, Query, HTTPException
-from pydantic import BaseModel
+from fastapi import FastAPI, Query, HTTPException, status
+from pydantic import BaseModel, field_validator
 from src.search.retriever import DocumentRetriever
 from src.templates.manager import TemplateManager
 from src.templates.renderer import TemplateRenderer
@@ -61,14 +61,31 @@ class TemplatesResponse(BaseModel):
 @app.get("/api/templates", response_model=TemplatesResponse)
 def list_templates(type: str = None):
     """获取模板列表"""
-    filter_type = TemplateType(type) if type else None
-    templates = template_manager.list_templates(filter_type)
-    return TemplatesResponse(templates=templates, total=len(templates))
+    try:
+        filter_type = TemplateType(type) if type else None
+        templates = template_manager.list_templates(filter_type)
+        return TemplatesResponse(templates=templates, total=len(templates))
+    except ValueError:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"无效的类型参数: {type}. 有效类型为: {[t.value for t in TemplateType]}"
+        )
 
 class CreateTemplateRequest(BaseModel):
     name: str
     type: str
     description: str = ""
+
+    @field_validator("type")
+    @classmethod
+    def validate_type(cls, v: str) -> str:
+        """验证 type 是否为有效的 TemplateType"""
+        try:
+            TemplateType(v)
+            return v
+        except ValueError:
+            valid_types = [t.value for t in TemplateType]
+            raise ValueError(f"无效的类型: {v}. 有效类型为: {valid_types}")
 
 @app.post("/api/templates")
 def create_template(request: CreateTemplateRequest):
