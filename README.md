@@ -1,6 +1,6 @@
-# MSIS - 内网军队公文写作助手
+# MSIS - 军墨智工
 
-基于 Sirchmunk 的离线公文写作助手，支持智能检索、模板生成、辅助校对。
+**MSIS**（**M**ilitary **S**cript **I**ntelligence **S**ystem）—— 军墨智工，基于 Sirchmunk 的离线公文写作助手，支持智能检索、模板生成、辅助校对。
 
 ## 功能特性
 
