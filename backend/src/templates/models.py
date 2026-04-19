@@ -32,7 +32,7 @@ class TemplateField(BaseModel):
 
 class Template(BaseModel):
     """公文模板"""
-    id: int
+    id: int | None = None
     name: str = Field(..., min_length=1, description="模板名称")
     type: TemplateType = Field(..., description="模板类型")
     description: str = Field(default="", description="模板描述")
@@ -42,6 +42,7 @@ class Template(BaseModel):
 
 class GeneratedDocument(BaseModel):
     """生成的文档"""
+    id: int | None = None
     template_id: int
     content: str
     metadata: dict = Field(default_factory=dict)
