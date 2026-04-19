@@ -7,13 +7,13 @@
 
     <el-row :gutter="20" class="feature-grid">
       <el-col :span="8">
-        <el-card @click="$router.push('/search')" class="feature-card">
+        <el-card @click="$router.push({name: 'Search'})" class="feature-card">
           <template #header>智能检索</template>
           <p>从公文库中快速检索相关文档</p>
         </el-card>
       </el-col>
       <el-col :span="8">
-        <el-card @click="$router.push('/templates')" class="feature-card">
+        <el-card @click="$router.push({name: 'Templates'})" class="feature-card">
           <template #header>模板库</template>
           <p>使用预设模板快速生成公文</p>
         </el-card>
