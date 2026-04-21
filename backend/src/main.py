@@ -1,5 +1,19 @@
+import logging
 from pathlib import Path
 from typing import Dict, List, Optional
+import shutil
+
+# 配置日志
+log_dir = Path("backend/logs")
+log_dir.mkdir(exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_dir / "document_index.log", encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
 
 from fastapi import FastAPI, Query, HTTPException, status, UploadFile, File
 from pydantic import BaseModel, field_validator
