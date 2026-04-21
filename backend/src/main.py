@@ -245,3 +245,11 @@ def reindex_documents():
     """手动触发重新索引"""
     result = document_library.reindex_all()
     return ReindexResponse(**result)
+
+@app.delete("/api/documents/{file_name}")
+def delete_document(file_name: str):
+    """删除已索引的文档"""
+    success = document_library.indexer.remove_file(file_name)
+    if success:
+        return {"success": True, "message": "文档删除成功"}
+    raise HTTPException(status_code=404, detail="文档不存在")
