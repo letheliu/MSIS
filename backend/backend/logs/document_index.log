@@ -1,0 +1,30 @@
+2026-04-21 14:34:56,908 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 14:34:56,910 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 14:34:56,912 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 14:34:56,912 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 14:34:56,913 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 14:34:56,914 - src.search.indexer - INFO - 索引完成: 总计 4, 成功 4, 失败 0
+2026-04-21 14:35:01,351 - src.search.indexer - INFO - 从索引中移除: test_upload.txt
+2026-04-21 14:35:22,836 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 14:35:22,837 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 14:35:22,837 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 14:35:22,838 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 14:35:22,838 - src.search.indexer - INFO - 索引完成: 总计 4, 成功 4, 失败 0
+2026-04-21 15:09:59,719 - src.documents.library - INFO - 检测到新文件: test_chinese.txt
+2026-04-21 15:09:59,720 - src.documents.library - INFO - 检测到文件修改: test_chinese.txt
+2026-04-21 15:09:59,725 - src.documents.library - INFO - 文件索引成功: test_chinese.txt
+2026-04-21 15:09:59,726 - src.documents.library - INFO - 文件索引成功: test_chinese.txt
+2026-04-21 15:09:59,726 - src.documents.library - INFO - 文件索引成功: test_chinese.txt
+2026-04-21 15:10:20,756 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 15:10:20,756 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 15:10:20,757 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 15:10:20,758 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 15:10:20,759 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 15:10:20,759 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 15:10:21,017 - src.search.indexer - INFO - 从索引中移除: test_chinese.txt
+2026-04-21 15:12:30,414 - src.documents.library - INFO - 检测到文件修改: 命令_训练计划.txt
+2026-04-21 15:12:30,415 - src.documents.library - INFO - 文件索引成功: 命令_训练计划.txt
+2026-04-21 15:12:30,421 - src.documents.library - INFO - 检测到文件修改: 报告_季度工作总结.txt
+2026-04-21 15:12:30,422 - src.documents.library - INFO - 检测到文件修改: 通知_放假安排.txt
+2026-04-21 15:12:30,427 - src.documents.library - INFO - 文件索引成功: 报告_季度工作总结.txt
+2026-04-21 15:12:30,428 - src.documents.library - INFO - 文件索引成功: 通知_放假安排.txt

@@ -4,7 +4,7 @@ from typing import Dict, List, Optional
 import shutil
 
 # 配置日志
-log_dir = Path("backend/logs")
+log_dir = Path("logs")
 log_dir.mkdir(exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
