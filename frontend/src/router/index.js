@@ -20,6 +20,11 @@ const routes = [
     path: '/templates/:id/edit',
     name: 'TemplateEditor',
     component: () => import('../views/TemplateEditor.vue')
+  },
+  {
+    path: '/documents',
+    name: 'Documents',
+    component: () => import('../views/Documents.vue')
   }
 ]
 

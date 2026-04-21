@@ -15,6 +15,7 @@
           <el-menu-item index="/">首页</el-menu-item>
           <el-menu-item index="/search">检索</el-menu-item>
           <el-menu-item index="/templates">模板库</el-menu-item>
+          <el-menu-item index="/documents">文档库</el-menu-item>
         </el-menu>
       </el-header>
       <el-main>
