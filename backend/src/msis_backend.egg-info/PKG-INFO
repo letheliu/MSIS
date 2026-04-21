@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: msis-backend
+Version: 0.0.1
+Summary: Military Document Writing Assistant Backend
+Author: MSIS Team
+License: MIT
+Project-URL: Homepage, https://github.com/your-org/msis
+Project-URL: Repository, https://github.com/your-org/msis
+Project-URL: Documentation, https://github.com/your-org/msis#readme
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: FastAPI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn[standard]>=0.24.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: pydantic-settings>=2.0.0
+Requires-Dist: python-multipart>=0.0.6
+Requires-Dist: python-jose[cryptography]>=3.3.0
+Requires-Dist: passlib[bcrypt]>=1.7.4
+Requires-Dist: aiofiles>=23.2.1
+Requires-Dist: sirchmunk>=0.0.2
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: watchdog>=5.0.0
+Requires-Dist: python-docx>=1.2.0
+Requires-Dist: pdfplumber>=0.11.0
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: python-json-logger>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: httpx>=0.25.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.7.0; extra == "dev"
+
+# MSIS Backend
+
+内网军队公文写作助手后端服务
+
+## 安装依赖
+
+```bash
+pip install -e .
+```
+
+## 运行
+
+```bash
+uvicorn src.main:app --reload
+```
+
+## 测试
+
+```bash
+# 运行所有测试
+pytest
+
+# 运行测试并显示详细输出
+pytest -v
+
+# 运行特定测试文件
+pytest tests/test_example.py
+```

@@ -172,3 +172,15 @@
 2026-04-21 20:58:57,721 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
 2026-04-21 20:58:57,721 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
 2026-04-21 20:58:57,721 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 21:12:05,780 - src.main - INFO - MSIS Backend starting...
+2026-04-21 21:12:05,781 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 21:12:05,783 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 21:12:05,784 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 21:12:05,785 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 21:12:05,785 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 21:12:05,786 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 21:12:05,787 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 21:12:05,787 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 21:12:05,787 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 21:13:00,599 - src.main - INFO - MSIS Backend shutting down...
+2026-04-21 21:13:01,358 - src.documents.library - INFO - 文件监听已停止
