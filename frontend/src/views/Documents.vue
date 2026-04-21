@@ -84,7 +84,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { ElMessage } from 'element-plus'
+import { ElMessage, ElMessageBox } from 'element-plus'
 import { UploadFilled, Refresh } from '@element-plus/icons-vue'
 import axios from 'axios'
 
@@ -184,12 +184,22 @@ const clearFiles = () => {
 // 删除文档
 const deleteDocument = async (doc) => {
   try {
-    await ElMessage.info('删除功能需要后端 API 支持')
-    // TODO: 实现删除 API 调用
-    // await axios.delete(`${API_BASE}/api/documents/${doc.name}`)
-    // fetchDocuments()
+    await ElMessageBox.confirm(
+      `确定要删除文档 "${doc.name}" 吗？`,
+      '确认删除',
+      {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }
+    )
+    await axios.delete(`${API_BASE}/api/documents/${encodeURIComponent(doc.name)}`)
+    ElMessage.success('删除成功')
+    fetchDocuments()
   } catch (error) {
-    ElMessage.error('删除失败')
+    if (error !== 'cancel') {
+      ElMessage.error('删除失败')
+    }
   }
 }
 
