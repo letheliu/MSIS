@@ -1,0 +1,25 @@
+- [x] `core/config.py` 包含 Settings 类，定义 LLM_BASE_URL、LLM_MODEL、SIRCHMUNK_SEARCH_PATHS、DATABASE_URL 等配置项及默认值
+- [x] `core/database.py` 初始化 SQLAlchemy engine 和 SessionLocal，提供 get_db() 依赖注入函数
+- [x] `core/dependencies.py` 提供 get_sirchmunk_service()、get_llm_service()、get_creation_orchestrator() 依赖注入
+- [x] `search/sirchmunk_service.py` 的 SirchmunkService 封装 AgenticSearch，支持 FAST/DEEP/FILENAME_ONLY 三种模式
+- [x] SirchmunkService.search_for_generation() 使用 DEEP 模式检索并返回结构化上下文（evidence, patterns, confidence, source_files）
+- [x] `llm/service.py` 的 LLMService 通过 OpenAI 兼容协议调用 Ollama，支持同步和流式生成
+- [x] LLMService.stream_generate() 返回 AsyncIterator[str]，逐 token yield
+- [x] `llm/prompts.py` 的 PromptTemplates 包含 5 种公文类型（command/notice/report/summary/memo）的格式要求
+- [x] PromptTemplates.GENERATION_TEMPLATE 能正确组装 system_prompt + 检索上下文 + 用户参数 + 类型格式要求
+- [x] `creation/orchestrator.py` 的 CreationOrchestrator 串联 Sirchmunk DEEP 检索 → 提示词构建 → LLM 流式生成
+- [x] CreationOrchestrator.create_document() 返回 AsyncIterator[str]，可被 SSE 路由消费
+- [x] `creation/task_manager.py` 的 TaskManager 管理任务生命周期（创建/流式获取/完整获取/列表/删除）
+- [x] `POST /api/generation/create` 接受 topic、doc_type、reference_docs、parameters，返回 task_id
+- [x] `GET /api/generation/{task_id}/stream` 通过 SSE 逐 token 推送生成内容
+- [x] `GET /api/generation/{task_id}` 返回完整生成结果和元数据
+- [x] `GET /api/generation/history` 返回分页生成历史
+- [x] `GET /api/search?q=xxx&mode=FAST` 对接 SirchmunkService 替代原有关键词搜索
+- [x] main.py 使用 include_router 注册拆分后的子路由，保留 CORS 和生命周期配置
+- [x] CreateDocument.vue 包含公文类型选择、主题输入、参考文档选择、参数配置、实时预览区域
+- [x] CreateDocument.vue 通过 SSE 接收流式内容并逐字显示
+- [x] 前端路由注册 /create 和 /create/:id
+- [x] App.vue 导航栏包含"公文创作"入口
+- [x] pyproject.toml 添加 sirchmunk、sqlalchemy、python-json-logger、pydantic-settings 依赖
+- [x] .env.example 包含所有配置项及说明
+- [x] 后端服务启动不报错（无 LLM 连接时优雅降级）

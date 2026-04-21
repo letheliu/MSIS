@@ -88,7 +88,7 @@ import { ElMessage, ElMessageBox } from 'element-plus'
 import { UploadFilled, Refresh } from '@element-plus/icons-vue'
 import axios from 'axios'
 
-const API_BASE = 'http://localhost:8000'
+const API_BASE = ''
 
 const configForm = ref({
   document_path: '',

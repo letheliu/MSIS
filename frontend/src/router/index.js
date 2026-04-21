@@ -25,6 +25,16 @@ const routes = [
     path: '/documents',
     name: 'Documents',
     component: () => import('../views/Documents.vue')
+  },
+  {
+    path: '/create',
+    name: 'CreateDocument',
+    component: () => import('../views/CreateDocument.vue')
+  },
+  {
+    path: '/create/:id',
+    name: 'EditDocument',
+    component: () => import('../views/CreateDocument.vue')
   }
 ]
 

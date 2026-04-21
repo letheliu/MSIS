@@ -28,3 +28,8 @@
 2026-04-21 15:12:30,422 - src.documents.library - INFO - 检测到文件修改: 通知_放假安排.txt
 2026-04-21 15:12:30,427 - src.documents.library - INFO - 文件索引成功: 报告_季度工作总结.txt
 2026-04-21 15:12:30,428 - src.documents.library - INFO - 文件索引成功: 通知_放假安排.txt
+2026-04-21 19:22:50,664 - src.documents.library - INFO - 检测到新文件: 成都现场演示脚本.docx
+2026-04-21 19:22:50,671 - src.documents.library - INFO - 检测到文件修改: 成都现场演示脚本.docx
+2026-04-21 19:22:50,705 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,720 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,743 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx

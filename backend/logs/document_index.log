@@ -1,0 +1,174 @@
+2026-04-21 19:06:34,702 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:06:34,703 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:06:34,704 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:06:34,705 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:06:34,706 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:06:34,707 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:06:34,707 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:09:39,347 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 19:09:40,141 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:09:40,143 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:09:40,143 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:09:40,144 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:09:40,145 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:09:40,146 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:09:40,146 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:10:01,362 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 19:10:05,047 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:10:05,049 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:10:05,049 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:10:05,050 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:10:05,051 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:10:05,052 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:10:05,052 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:12:02,189 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:12:02,190 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:12:02,191 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:12:02,192 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:12:02,192 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:12:02,193 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:12:02,194 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:13:26,972 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 19:13:43,845 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:13:43,846 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:13:43,847 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:13:43,848 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:13:43,849 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:13:43,850 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:13:43,850 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:20:07,517 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 19:20:44,987 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:20:44,989 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:20:44,989 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:20:44,990 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:20:44,991 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:20:44,992 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:20:44,992 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:22:15,079 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 19:22:15,081 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 19:22:15,081 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 19:22:15,082 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 19:22:15,083 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 19:22:15,084 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 19:22:15,084 - src.search.indexer - INFO - 索引完成: 总计 5, 成功 5, 失败 0
+2026-04-21 19:22:50,661 - src.documents.library - INFO - 检测到新文件: 成都现场演示脚本.docx
+2026-04-21 19:22:50,661 - src.documents.library - INFO - 检测到新文件: 成都现场演示脚本.docx
+2026-04-21 19:22:50,661 - src.documents.library - INFO - 检测到新文件: 成都现场演示脚本.docx
+2026-04-21 19:22:50,662 - src.documents.library - INFO - 检测到文件修改: 成都现场演示脚本.docx
+2026-04-21 19:22:50,662 - src.documents.library - INFO - 检测到文件修改: 成都现场演示脚本.docx
+2026-04-21 19:22:50,662 - src.documents.library - INFO - 检测到文件修改: 成都现场演示脚本.docx
+2026-04-21 19:22:50,694 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,699 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,702 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,721 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,725 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 19:22:50,728 - src.documents.library - INFO - 文件索引成功: 成都现场演示脚本.docx
+2026-04-21 20:05:30,401 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 20:05:30,416 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 20:27:32,157 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 20:40:09,093 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:40:09,095 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:40:09,099 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:40:09,102 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:40:09,107 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:40:09,110 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:40:09,113 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:40:09,116 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:40:09,118 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:40:09,118 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:42:33,074 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:42:33,075 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:42:33,076 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:42:33,077 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:42:33,078 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:42:33,082 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:42:33,085 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:42:33,089 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:42:33,095 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:42:33,099 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:44:13,420 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:44:13,421 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:44:13,423 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:44:13,424 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:44:13,425 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:44:13,431 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:44:13,433 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:44:13,434 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:44:13,434 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:44:13,434 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:45:29,433 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:45:29,434 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:45:29,436 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:45:29,437 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:45:29,438 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:45:29,438 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:45:29,439 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:45:29,440 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:45:29,440 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:45:29,440 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:48:55,805 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:48:55,813 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:48:55,816 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:48:55,820 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:48:55,822 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:48:55,825 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:48:55,826 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:48:55,828 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:48:55,828 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:48:55,828 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:51:26,040 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:51:26,041 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:51:26,042 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:51:26,043 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:51:26,044 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:51:26,045 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:51:26,046 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:51:26,047 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:51:26,047 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:51:26,047 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:53:25,289 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:53:25,290 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:53:25,292 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:53:25,293 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:53:25,294 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:53:25,295 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:53:25,296 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:53:25,297 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:53:25,298 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:53:25,298 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:55:55,616 - src.main - INFO - Registering creation_router with 6 routes
+2026-04-21 20:55:55,616 - src.main - INFO -   route: {'POST'} /api/generation/create
+2026-04-21 20:55:55,616 - src.main - INFO -   route: {'GET'} /api/generation/{task_id}/stream
+2026-04-21 20:55:55,617 - src.main - INFO -   route: {'GET'} /api/generation/{task_id}
+2026-04-21 20:55:55,617 - src.main - INFO -   route: {'POST'} /api/generation/{task_id}/optimize
+2026-04-21 20:55:55,617 - src.main - INFO -   route: {'GET'} /api/generation/history
+2026-04-21 20:55:55,617 - src.main - INFO -   route: {'DELETE'} /api/generation/{task_id}
+2026-04-21 20:55:55,619 - src.main - INFO - Total app routes: 20
+2026-04-21 20:55:55,620 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:55:55,621 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:55:55,622 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:55:55,624 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:55:55,625 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:55:55,626 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:55:55,627 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:55:55,628 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:55:55,628 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:55:55,628 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 20:58:57,710 - src.main - INFO - Registering creation_router with 6 routes
+2026-04-21 20:58:57,710 - src.main - INFO -   route: {'POST'} /api/generation/create
+2026-04-21 20:58:57,710 - src.main - INFO -   route: {'GET'} /api/generation/{task_id}/stream
+2026-04-21 20:58:57,710 - src.main - INFO -   route: {'GET'} /api/generation/{task_id}
+2026-04-21 20:58:57,710 - src.main - INFO -   route: {'POST'} /api/generation/{task_id}/optimize
+2026-04-21 20:58:57,710 - src.main - INFO -   route: {'GET'} /api/generation/history
+2026-04-21 20:58:57,710 - src.main - INFO -   route: {'DELETE'} /api/generation/{task_id}
+2026-04-21 20:58:57,712 - src.main - INFO - Total app routes: 20
+2026-04-21 20:58:57,713 - src.main - INFO - MSIS Backend starting...
+2026-04-21 20:58:57,714 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 20:58:57,716 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 20:58:57,717 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 20:58:57,718 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 20:58:57,719 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 20:58:57,720 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 20:58:57,721 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 20:58:57,721 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 20:58:57,721 - src.main - INFO - 文档索引完成: 6/6 文件

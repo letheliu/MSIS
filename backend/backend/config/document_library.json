@@ -1,0 +1,12 @@
+{
+  "document_path": "./data/sample_docs",
+  "index_path": "./data/indexed",
+  "auto_reindex": true,
+  "supported_formats": [
+    ".txt",
+    ".md",
+    ".json",
+    ".docx",
+    ".pdf"
+  ]
+}
