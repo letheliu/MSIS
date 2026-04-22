@@ -17,9 +17,12 @@ class LLMService:
     ):
         self.base_url = base_url or settings.LLM_BASE_URL
         self.model = model or settings.LLM_MODEL
+        api_key = settings.LLM_API_KEY
+        headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
         self.client = httpx.AsyncClient(
             base_url=self.base_url,
             timeout=120.0,
+            headers=headers,
         )
 
     async def generate(

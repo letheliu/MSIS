@@ -184,3 +184,51 @@
 2026-04-21 21:12:05,787 - src.main - INFO - 文档索引完成: 6/6 文件
 2026-04-21 21:13:00,599 - src.main - INFO - MSIS Backend shutting down...
 2026-04-21 21:13:01,358 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 21:23:55,774 - src.main - INFO - MSIS Backend starting...
+2026-04-21 21:23:55,775 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 21:23:55,776 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 21:23:55,777 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 21:23:55,778 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 21:23:55,779 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 21:23:55,780 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 21:23:55,781 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 21:23:55,782 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 21:23:55,782 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 21:25:13,329 - src.main - INFO - MSIS Backend starting...
+2026-04-21 21:25:13,330 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 21:25:13,331 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 21:25:13,332 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 21:25:13,333 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 21:25:13,334 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 21:25:13,335 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 21:25:13,336 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 21:25:13,337 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 21:25:13,337 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 21:25:13,337 - src.main - INFO - MSIS Backend shutting down...
+2026-04-21 21:25:14,343 - src.documents.library - INFO - 文件监听已停止
+2026-04-21 21:26:11,017 - src.main - INFO - MSIS Backend starting...
+2026-04-21 21:26:11,018 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 21:26:11,020 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 21:26:11,021 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 21:26:11,022 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 21:26:11,023 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 21:26:11,024 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 21:26:11,025 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 21:26:11,025 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 21:26:11,025 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 21:26:23,351 - src.core.dependencies - WARNING - SirchmunkService init failed (LLM unavailable?): [WinError 5] 拒绝访问。: 'C:\\Users\\26428\\.sirchmunk'
+2026-04-21 21:26:23,610 - httpx - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/coding/v3/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-04-21 21:26:23,610 - src.llm.service - ERROR - LLM stream failed: Client error '401 Unauthorized' for url 'https://ark.cn-beijing.volces.com/api/coding/v3/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-04-21 21:28:48,338 - src.main - INFO - MSIS Backend starting...
+2026-04-21 21:28:48,339 - src.documents.library - INFO - 文件监听已启动: data\sample_docs
+2026-04-21 21:28:48,341 - src.search.indexer - INFO - 索引成功: test_chinese.txt
+2026-04-21 21:28:48,342 - src.search.indexer - INFO - 索引成功: test_upload.txt
+2026-04-21 21:28:48,343 - src.search.indexer - INFO - 索引成功: 命令_训练计划.txt
+2026-04-21 21:28:48,344 - src.search.indexer - INFO - 索引成功: 成都现场演示脚本.docx
+2026-04-21 21:28:48,345 - src.search.indexer - INFO - 索引成功: 报告_季度工作总结.txt
+2026-04-21 21:28:48,346 - src.search.indexer - INFO - 索引成功: 通知_放假安排.txt
+2026-04-21 21:28:48,346 - src.search.indexer - INFO - 索引完成: 总计 6, 成功 6, 失败 0
+2026-04-21 21:28:48,346 - src.main - INFO - 文档索引完成: 6/6 文件
+2026-04-21 21:28:58,815 - src.core.dependencies - WARNING - SirchmunkService init failed (LLM unavailable?): [WinError 5] 拒绝访问。: 'C:\\Users\\26428\\.sirchmunk'
+2026-04-21 21:28:59,234 - httpx - INFO - HTTP Request: POST https://ark.cn-beijing.volces.com/api/coding/v3/chat/completions "HTTP/1.1 200 OK"
